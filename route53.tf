@@ -7,5 +7,5 @@ resource "aws_route53_record" "web" {
   name    = var.web_sub_domain_name
   type    = "A"
   ttl     = 300
-  records = [aws_instance.web[0].public_ip]
+  records = [aws_instance.web.*.public_ip]
 }
