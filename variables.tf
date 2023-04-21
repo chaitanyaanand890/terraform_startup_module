@@ -30,10 +30,6 @@ variable "web_sub_domain_name" {
     type = string
 }
 
-variable "aws_private_key_path" {
-    type = string
-}
-
 variable "mail_want" {
   type = bool
   default = true 
